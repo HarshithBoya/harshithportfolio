@@ -1,4 +1,4 @@
 # harshithportfolio
 this is my personal portfolio.
 <br>
-author - Harshith
+author -Boya Harshith
