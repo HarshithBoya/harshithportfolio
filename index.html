@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="style.css">
     <title>My Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -66,6 +68,7 @@
                         <p class="tab-links " onclick="opentab('Experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('Education')" >Education</p> 
                         <p class="tab-links" onclick="opentab('Other Activites')" >Other Activites</p>
+                        <p class="tab-links" onclick="opentab('Certificates')" >Certificates</p>
 
 
                     </div>
@@ -120,6 +123,16 @@
                             <!-- <li><span></span></li> -->
                             
                         </ul>
+                    </div>
+                    <div class="tab-contents" id="Certificates">
+                            <ul >
+                                <li><i class="fa-brands fa-html5"></i><a href="html certificate.pdf" target="_blank"> HTML Certificate</a></li>
+                                <li><i class="fa-brands fa-js"></i><a href="javascript certificate.pdf" target="_blank"> JavaScript Certificate</a></li>
+                                <!-- <li><a href=""></a></li> -->
+                                <li><a href="google certificate.pdf" target="_blank">GEN AI Certificate</a></li>
+                            </ul>
+                        <!-- <li><a href=""></a></li> -->
+                    
                     </div>
                 </div>
             </div>
@@ -214,7 +227,10 @@
                     <a href="https://www.instagram.com/harshith_harsha_79?igsh=eXU3bXBrZnRmaHcw"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/harshith-boya"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/HarshithBoya"><i class="fa-brands fa-github"></i></a>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6b5481e (added and updated in the about section)
                 </div>
                 <a href="Harshith Resume.pdf" download class="btn btn2" >Download CV</a>
             </div>
@@ -320,6 +336,16 @@
             setTimeout(typeText, 500); // Start typing after 500ms delay
         });
     </script>
+
+<script>
+    function showMenu() {
+        document.getElementById("nav-links").style.right = "0";
+    }
+    function hideMenu() {
+        document.getElementById("nav-links").style.right = "-200px";
+    }
+</script>
+
     
 </body>
 </html>
