@@ -7,8 +7,6 @@
     <title>My Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
     <div id="header">
@@ -40,7 +38,9 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="profile.JPG" alt="profile">
+                    <div class="animate">
+                     <img src="profile.JPG" alt="profile">
+                    </div>
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -59,7 +59,7 @@
 
                         <p>Currently, I’m pursuing a Bachelor's degree in Engineering at St. Martin's Engineering College. Beyond coding, I actively contribute to initiatives like Digital India and Unnat Bharat Abhiyan, aiming to bridge the gap between technology and society.</p>
 
-                        <p>I’m always open to exciting projects and collaborations—let’s build something great together! 🚀</p>
+                        <p>I’m always open to exciting projects and collaborations—let’s build something great together! </p>
 
 
 
@@ -227,10 +227,7 @@
                     <a href="https://www.instagram.com/harshith_harsha_79?igsh=eXU3bXBrZnRmaHcw"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/harshith-boya"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/HarshithBoya"><i class="fa-brands fa-github"></i></a>
-<<<<<<< HEAD
 
-=======
->>>>>>> 6b5481e (added and updated in the about section)
                 </div>
                 <a href="Harshith Resume.pdf" download class="btn btn2" >Download CV</a>
             </div>
@@ -345,6 +342,28 @@
         document.getElementById("nav-links").style.right = "-200px";
     }
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const aboutCol1 = document.querySelector('.about-col-1');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    aboutCol1.classList.add('animate');
+                    observer.unobserve(entry.target); // Animation plays only once
+                }
+            });
+        }, {
+            threshold: 0.5 // 50% visible triggers the animation
+        });
+
+        if (aboutCol1) {
+            observer.observe(aboutCol1);
+        }
+    });
+</script>
+
 
     
 </body>
