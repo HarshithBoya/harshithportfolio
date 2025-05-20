@@ -475,12 +475,17 @@ textarea:focus {
     outline-offset: 2px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 /* -----------------css for small screens----------- */
 nav .fas{
     display: none;
 }
-@media  only screen and (max-width:600px) {
+@media  only screen and (max-width:500px) {
     #header{
         background-image: url(backgroundforsmall.2.jpg);
     }
@@ -496,16 +501,23 @@ nav .fas{
         display: block;
         font-size: 25px;
     }
-    nav ul{
-        background: #ebbd34;
-        position:fixed;
-        top:0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-    }
+   nav ul {
+    background: #ebbd34;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out; /* Add transition */
+}
+
+nav ul.nav-active {
+    right: 0; /* Slides the menu into view */
+}
+
+
     nav ul li{
         display: block;
         margin: 25px;

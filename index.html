@@ -126,10 +126,10 @@
                     </div>
                     <div class="tab-contents" id="Certificates">
                             <ul >
-                                <li><i class="fa-brands fa-html5"></i><a href="html certificate.pdf" target="_blank"> HTML Certificate</a></li>
-                                <li><i class="fa-brands fa-js"></i><a href="javascript certificate.pdf" target="_blank"> JavaScript Certificate</a></li>
+                                <li><i class="fa-brands fa-html5"></i><a href="htmlcertificate.pdf" target="_blank"> HTML Certificate</a></li>
+                                <li><i class="fa-brands fa-js"></i><a href="javascriptcertificate.pdf" target="_blank"> JavaScript Certificate</a></li>
                                 <!-- <li><a href=""></a></li> -->
-                                <li><a href="google certificate.pdf" target="_blank">GEN AI Certificate</a></li>
+                                <li><a href="googlecertificate.pdf" target="_blank">GEN AI Certificate</a></li>
                             </ul>
                         <!-- <li><a href=""></a></li> -->
                     
@@ -154,7 +154,7 @@
 
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>full stack Web Developer</h2>
+                    <h2>Full Stack Web Developer</h2>
                     <p>I develop dynamic and scalable web applications, handling both front-end and back-end technologies. With expertise in databases, APIs, and server-side frameworks, I build complete, efficient, and high-performance solutions.</p>
                     <a href="#">Learn More</a>
 
@@ -250,22 +250,23 @@
       </div>
 
     <script>
+    function opentab(tabname) {
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-    
-        function opentab(tabname) {
-            for (let tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-    
-            for (let tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-    
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
         }
-    </script>
+
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
     <script>
         var sidemenu = document.getElementById("sidemenu");
         function openmenu(){
