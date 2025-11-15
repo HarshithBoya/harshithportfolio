@@ -1078,4 +1078,39 @@ nav .fas {
     .tab-titles::-webkit-scrollbar {
         display: none;
     }
+
+    .tab-titles {
+        position: relative;
+    }
+
+    /* right-side arrow hint */
+    .scroll-hint {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        font-size: 18px;
+        color: #ebbd34;
+        animation: hintMove 1.2s infinite ease-in-out;
+        pointer-events: none;
+        /* arrow won't block scrolling */
+        z-index: 10;
+    }
+
+    @keyframes hintMove {
+        0% {
+            transform: translateX(0);
+            opacity: 0.4;
+        }
+
+        50% {
+            transform: translateX(6px);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 0.4;
+        }
+    }
+
 }
